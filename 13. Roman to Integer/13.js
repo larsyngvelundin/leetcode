@@ -2,19 +2,13 @@ let testCases = ["III", "LVIII", "MCMXCIV", "IX", "XC"];
 let expectedResults = [3, 58, 1994, 9, 90];
 
 
+
+
 /**
  * @param {string} s
  * @return {number}
  */
-let symbolLookup = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000
-}
+let symbolLookup = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
 let modifiers = ["I", "X", "C"];
 var romanToInt = function (s) {
     let result = 0;
