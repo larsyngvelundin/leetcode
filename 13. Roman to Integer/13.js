@@ -13,7 +13,6 @@ let modifiers = ["I", "X", "C"];
 var romanToInt = function (s) {
     let result = 0;
     for (let i = 0; i < s.length; i++) {
-        console.log(symbolLookup[s[i]]);
         if (i > 0 && modifiers.includes(s[i - 1]) && symbolLookup[s[i]] > symbolLookup[s[i - 1]]) {
             result += symbolLookup[s[i]] - symbolLookup[s[i - 1]];
         }
