@@ -1,5 +1,5 @@
-let testCases = ["III", "LVIII", "MCMXCIV", "IX", "XC"];
-let expectedResults = [3, 58, 1994, 9, 90];
+let testCases = ["III", "LVIII", "MCMXCIV", "IX", "XC", "DCXXI"];
+let expectedResults = [3, 58, 1994, 9, 90, 621];
 
 
 
@@ -17,7 +17,7 @@ var romanToInt = function (s) {
             result += symbolLookup[s[i]] - symbolLookup[s[i - 1]];
         }
         else if (modifiers.includes(s[i]) && i < s.length - 1) {
-            if (symbolLookup[s[i]] == symbolLookup[s[i + 1]]) {
+            if (symbolLookup[s[i]] >= symbolLookup[s[i + 1]]) {
                 result += symbolLookup[s[i]];
             }
         }
