@@ -1,4 +1,63 @@
 test_cases = [
+    [[-1, 247, 2, -1, -1, -1, 117, -1, -1, -1, -1, 106, 140, -1, -1, -1, -1],
+        [212, -1, -1, -1, 65, -1, -1, -1, -1, 86, -1, -1, -1, -1, -1, -1, -1],
+        [-1, 43, -1, -1, -1, 135, -1, -1, -1, 50, -1, -1, -1, -1, -1, -1, -1],
+        [158, -1, -1, 277, -1, -1, -1, -1, 84, -1, -1, -1, -1, 284, -1, 61, 87],
+        [-1, 170, -1, -1, -1, -1, 270, 156, 267, -1, -1, 274, -1, -1, -1, -1, 95],
+        [114, -1, -1, 180, 289, -1, -1, -1, -1, 205, -1, 58, -1, -1, 204, -1, -1],
+        [180, 50, -1, 207, -1, -1, 61, -1, -1, -1, 127, -1, 33, -1, -1, 288, 198],
+        [200, -1, -1, -1, -1, -1, 150, -1, 73, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, 78, -1, -1, -1, -1, 283, -1, -1, -1, 204, 288, -1],
+        [-1, 5, -1, 10, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 162, 209, 135],
+        [101, -1, -1, -1, 250, -1, 250, -1, 254, -1, 2, -1, -1, -1, -1, -1, -1],
+        [238, -1, -1, 211, -1, -1, -1, -1, -1, -1, 29, -1, 101, 27, -1, -1, -1],
+        [-1, -1, 145, 87, -1, -1, -1, -1, -1, -1, -1, -1, 118, 61, -1, 26, -1],
+        [-1, -1, -1, -1, -1, -1, 29, -1, -1, -1, -1, -1, 170, -1, 90, -1, 214],
+        [-1, 117, 154, -1, 198, 114, -1, -1, -
+            1, -1, -1, -1, 248, 114, -1, 218, -1],
+        [193, -1, -1, -1, -1, -1, -1, -1, 288, -1, -1, -1, 68, -1, -1, -1, -1],
+        [-1, 3, -1, -1, -1, -1, 55, -1, -1, -1, -1, -1, -1, -1, -1, 28, -1]],
+    [[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 44, -1],
+        [-1, -1, -1, -1, -1, -1, -1, 234, 81, -1, -1, -1, 179, 176, -1, 209, -1],
+        [-1, -1, -1, 255, -1, -1, -1, -1, 43, -1, -1, -1, 184, -1, -1, -1, -1],
+        [-1, -1, 200, 165, -1, -1, -1, -1, -1, -1, -1, -1, 253, 60, 168, -1, 114],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 115, -1],
+        [-1, 222, 286, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 249, -1, -1],
+        [81, -1, -1, -1, -1, -1, 17, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 121, -1],
+        [168, -1, -1, -1, -1, -1, -1, 21, -1, -1, -1, -1, 62, -1, -1, 125, -1],
+        [-1, -1, -1, -1, -1, 76, 156, -1, -1, -1, 253, -1, -1, -1, -1, -1, -1],
+        [84, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 155, -1, -1, -1, 138, -1],
+        [-1, 226, 65, -1, -1, -1, -1, -1, -1, -1, 26, -1, 162, -1, -1, -1, 51],
+        [-1, -1, 252, -1, -1, -1, -1, -1, -1, -1, 92, -1, -1, 36, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 275, -1, -1, -1, -1, -1, -1, 268, -1, -1, -1],
+        [-1, -1, -1, -1, -1, 251, -1, 71, -1, -1, -1, -1, 242, -1, -1, 242, -1],
+        [-1, 89, -1, -1, -1, -1, -1, -1, -1, -1, -1, 108, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, 149, -1, -1, -1, -1, -1, -1, -1, -1, -1]],
+    [[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 41, 43, -1, -1, -1, -1, -1, -1, -1, 107],
+        [99, 82, -1, 113, 72, -1, -1, -1, -1, 136, -1, 92],
+        [-1, -1, -1, 86, -1, -1, -1, 60, 49, 105, -1, -1],
+        [-1, -1, 23, 40, -1, -1, -1, -1, -1, 140, -1, -1],
+        [-1, -1, 79, -1, 7, 57, 117, 35, -1, -1, -1, 125],
+        [-1, 98, -1, 2, -1, -1, -1, -1, -1, -1, 38, -1],
+        [3, -1, -1, -1, -1, 8, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, -1, -1, 7, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 131, 75, 103, -1, 16, -1],
+        [-1, -1, -1, -1, -1, 118, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 119, -1, -1, -1, -1, -1, -1, -1]],
+    [[-1, -1, -1, -1, 48, 5, -1],
+        [12, 29, 13, 9, -1, 2, 32],
+        [-1, -1, 21, 7, -1, 12, 49],
+        [42, 37, 21, 40, -1, 22, 12],
+        [42, -1, 2, -1, -1, -1, 6],
+        [39, -1, 35, -1, -1, 39, -1],
+        [-1, 36, -1, -1, -1, -1, 5]],
+    [[-1, -1, 2, 21, -1],
+        [16, -1, 24, -1, 4],
+        [2, 3, -1, -1, -1],
+        [-1, 11, 23, 18, -1],
+        [-1, -1, -1, 23, -1]],
     [[-1, -1, -1, 16, -1, -1, -1, -1, 37, -1],
      [-1, -1, 87, -1, -1, -1, -1, -1, -1, 16],
      [-1, 53, 75, 70, -1, -1, -1, -1, -1, -1],
@@ -68,7 +127,7 @@ test_cases = [
         [-1, 15, -1, -1, -1, -1]],
     [[-1, -1], [-1, 3]]
 ]
-expected_results = [4, 7, 3, 8, 4, 2, -1, 1, 4, 1]
+expected_results = [5, 10, 5, 3, 2, 4, 7, 3, 8, 4, 2, -1, 1, 4, 1]
 
 
 def snakesAndLadders(board):
@@ -92,6 +151,8 @@ def snakesAndLadders(board):
     goal_pos = len(space_list) - 1
     steps_to_goal = 9999
     solvable = True
+    # can be commented
+    steps_taken = []
     while current_pos < goal_pos and solvable:
         move_amount += 1
         highest_value = 0
@@ -165,8 +226,60 @@ def snakesAndLadders(board):
         current_pos = space_list[highest_value_index]
         if one_step_highest_value > highest_value:
             current_pos = space_list[one_step_highest_value_index]
+        steps_taken.append(current_pos)
+    print(steps_taken)
     if solvable:
         return move_amount
+    else:
+        return -1
+
+
+#[35, 28, 48]
+def snakesAndLaddersReworkDraft(board):
+    steps_away = {}
+    space_list = []
+    for i in reversed(range(0, len(board))):
+        if i % 2 != len(board) % 2:
+            for j in range(0, len(board[i])):
+                space_list.append(board[i][j])
+        else:
+            for j in reversed(range(0, len(board[i]))):
+                space_list.append(board[i][j])
+    for i in range(0, len(space_list)):
+        steps_away[i] = 999
+        if space_list[i] > 0:
+            space_list[i] -= 1
+        else:
+            space_list[i] = i
+    steps_away[len(space_list)-1] = 0
+    for x in range(0, len(space_list)):
+        if space_list[x] == len(space_list) - 1:
+            steps_away[x] = 0
+    #rounds_of_ref = int(len(board)/3) + 1
+    refining = True
+    # for refinements in range(0, rounds_of_ref):
+    extra_try = False
+    while (refining):
+        last_result = steps_away[0]
+        for i in reversed(range(0, len(space_list))):
+            reverse_range = 6
+            if i < 6:
+                reverse_range = i
+            for j in reversed(range(i - reverse_range, i)):
+                for x in range(0, len(space_list)):
+                    if space_list[x] == j:
+                        if steps_away[x] > steps_away[i] + 1:
+                            steps_away[x] = steps_away[i] + 1
+        new_result = steps_away[0]
+        if new_result == last_result:
+            if extra_try:
+                refining = False
+            else:
+                extra_try = True
+        else:
+            extra_try = False
+    if steps_away[0] < 999:
+        return steps_away[0]
     else:
         return -1
 
@@ -181,67 +294,28 @@ def snakesAndLaddersRework(board):
         else:
             for j in reversed(range(0, len(board[i]))):
                 space_list.append(board[i][j])
-
     for i in range(0, len(space_list)):
-        steps_away[i] = -1
+        steps_away[i] = 999
         if space_list[i] > 0:
             space_list[i] -= 1
         else:
             space_list[i] = i
-
-    move_amount = 0
-    # current_pos = 0
-    # goal_pos = len(space_list) - 1
-    # steps_to_goal = 9999
-    solvable = True
-    solution_found = False
-    print(space_list)
-    print(steps_away)
-    while solvable and not solution_found:
-        steps_away[len(space_list)-1] = 0
+    steps_away[len(space_list)-1] = 0
+    for x in range(0, len(space_list)):
+        if space_list[x] == len(space_list) - 1:
+            steps_away[x] = 0
+    rounds_of_ref = int(len(board)/3) + 1
+    for refinements in range(0, rounds_of_ref):
         for i in reversed(range(0, len(space_list))):
-            # print(f"\nChecking the spaces before {i}")
-            # print(f"Spaces before:", end="")
-            for j in reversed(range(space_list[i] - get_reverse_range(space_list[i]), space_list[i])):
-                # print(f"{j}({space_list[j]}),", end="")
-                if steps_away[i] != -1:
-                    if space_list[j] == j:
-
-                        print(
-                            f"Setting {j}-{steps_away[j]} to {steps_away[i]+1} ({i}-{steps_away[i]})")
-                        if steps_away[i] + 1 < steps_away[j] or steps_away[j] == -1:
-                            steps_away[j] = steps_away[i] + 1
-                        if i == 10:
-                            print(f"j:{j}")
-                            print(f"j:{j}")
-                            print(f"space j {space_list[j]}")
-                            print(f"steps_away[j] is now {steps_away[j]}")
-                            print(steps_away)
-                            print(space_list)
-                            stop = input()
-                    else:
-                        if space_list[j] > j:
-                            print(f"j:{j}")
-                            print(f"j:{j}")
-                            print(f"space j {space_list[j]}")
-                            print(
-                                f"Setting {j}-{steps_away[j]} to {steps_away[space_list[j]]+1} ({space_list[j]}-{steps_away[space_list[j]]})")
-                            if steps_away[space_list[j]] + 1 < steps_away[j] or steps_away[j] == -1:
-                                steps_away[j] = steps_away[space_list[j]] + 1
-                            if i == 10:
-                                print(f"steps_away[j] is now {steps_away[j]}")
-
-                                print(steps_away)
-                                stop = input()
-
-        for i in reversed(range(0, len(space_list))):
-            print(f"{space_list[i]}-", end="")
-        print("test")
-        solution_found = True
-        move_amount = 0
-
-    print(steps_away)
-    if solvable:
+            reverse_range = 6
+            if i < 6:
+                reverse_range = i
+            for j in reversed(range(i - reverse_range, i)):
+                for x in range(0, len(space_list)):
+                    if space_list[x] == j:
+                        if steps_away[x] > steps_away[i] + 1:
+                            steps_away[x] = steps_away[i] + 1
+    if steps_away[0] < 999:
         return steps_away[0]
     else:
         return -1
@@ -389,14 +463,13 @@ def get_range(current, max):
         range = max - current + 1
     return range
 
-
     # Testing
 for i in range(0, len(test_cases)):
-    result = snakesAndLaddersRework(test_cases[i])
+    result = snakesAndLaddersReworkDraft(test_cases[i])
     if result == expected_results[i]:
         print(f"==Test case {i+1} was valid")
         print(f"✔️ {result} moves, expected {expected_results[i]}")
     else:
         print(f"==Test case {i+1} was INVALID")
         print(f"❌ {result} moves, expected {expected_results[i]}")
-    stop = input(f"")
+    #stop = input(f"")
