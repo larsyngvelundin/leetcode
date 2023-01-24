@@ -389,6 +389,7 @@ def get_range(current, max):
         range = max - current + 1
     return range
 
+
     # Testing
 for i in range(0, len(test_cases)):
     result = snakesAndLaddersRework(test_cases[i])
