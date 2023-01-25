@@ -30,7 +30,7 @@ class Solution:
         return prefix
 
 
-    # Testing
+# Testing
 for i in range(0, len(test_cases)):
     result = Solution.longestCommonPrefix(Solution, test_cases[i])
     if result == expected_results[i]:
