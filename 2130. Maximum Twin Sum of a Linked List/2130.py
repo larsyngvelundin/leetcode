@@ -18,21 +18,16 @@ expected_results = [
 
 class Solution:
     def pairSum(self, head) -> int:
+        current = head
         array = []
-        while True:
-            # print(head)
-            # print(head.next)
-            array.append(head.val)
-            if head.next != None:
-                head = head.next
-            else:
-                break
-        print(array)
-        max = 0
-        for i in range(0, int(len(array)/2)):
-            if array[i] + array[-(i+1)] > max:
-                max = array[i] + array[-(i+1)]
-        return max
+        while current:
+            array.append(current.val)
+            current = current.next
+        max_sum = 0
+        max_range = int(len(array)/2)
+        for i in range(0, max_range):
+            max_sum = max(max_sum, array[i] + array[-(i+1)])
+        return max_sum
 
 
 # Testing
