@@ -13,10 +13,13 @@ expected_results = [
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        while (s[len(s)-1] == " "):
-            s = s[:-1]
-        last_word = s.split(" ")[len(s.split(" "))-1]
-        return len(last_word)
+        count = 0
+        for i in range(len(s)-1, -1, -1):
+            if (s[i] != " "):
+                count += 1
+            elif (count > 0):
+                return count
+        return count
 
         # Testing
 for i in range(0, len(test_cases)):
