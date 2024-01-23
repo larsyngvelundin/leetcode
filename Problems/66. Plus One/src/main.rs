@@ -1,14 +1,16 @@
 fn plus_one(digits: Vec<i32>) -> Vec<i32> {
-    for i in (0..digits.len()).rev() {
-        if digits[i] == 9 {
-            digits[i] = 0;
+    let mut result: Vec<i32> = digits.to_vec();
+    for i in (0..result.len()).rev() {
+        if result[i] == 9 {
+            result[i] = 0;
         } else {
-            digits[i] += 1;
-            return digits.to_vec();
+            result[i] += 1;
+            return result;
         }
     }
-    digits.insert(0, 1);
-    digits.to_vec()
+    let mut new_result = vec![1];
+    new_result.extend(result.iter());
+    new_result
 }
 
 fn main() {
@@ -31,7 +33,8 @@ fn main() {
 
     for i in 0..test_cases.len() {
         println!("==================================");
-        let result = plus_one(test_cases[i]);
+        let test_case: Vec<i32> = test_cases[i].to_vec();
+        let result = plus_one(test_case);
         if result == expected_results[i] {
             println!("==Test case {} was valid", i+1);
             println!("Got '{:?}', expected {:?}", result, expected_results[i]);
