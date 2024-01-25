@@ -18,11 +18,11 @@ pub fn add_binary(a: String, b: String) -> String {
         current += carry_over;
         if current & 1 == 1{
             newchars.push('1');
-            if current > 2{ carry_over = 1; } else{carry_over = 0;}
+            if current == 3{ carry_over = 1; } else{carry_over = 0;}
         }
         else{
             newchars.push('0');
-            if current > 0 {carry_over = 1;} else {carry_over = 0;}
+            if current == 2 {carry_over = 1;} else {carry_over = 0;}
         }
     }
     if carry_over == 1{
