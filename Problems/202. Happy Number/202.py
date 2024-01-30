@@ -12,18 +12,19 @@ expected_results = [
 class Solution:
     def isHappy(self, n: int) -> bool:
         past_nums = [n]
-        still_looking = True
-        while still_looking:
+        while True:
+            if n == 1:
+                return True
             n_str = str(n)
             new_n = 0
             for c in n_str:
                 n_int = int(c)
                 n_int = n_int * n_int
-                print(n_int)
                 new_n += n_int
             n = new_n
-            still_looking = False
-        return True
+            if n in past_nums:
+                return False
+            past_nums.append(n)
 
 
         # Testing
