@@ -1,17 +1,22 @@
-
 pub fn is_happy(n: i32) -> bool {
-    let mut past_numbers: Vec<i32> = vec![];
-    past_numbers.push(n);
-
-
-    println!("numbers: {}", past_numbers.len());
-    true
-}
-pub fn number_to_digit_vec(n: i32) -> Vec<u32> {
-    n.to_string()
-        .chars()
-        .map(|c| c.to_digit(10).unwrap())
-        .collect()
+    let mut n: u32 = n as u32;
+    let mut past_numbers: Vec<u32> = vec![n];
+    loop {
+        if n == 1 { return true; }
+        let n_list: Vec<u32> = n.to_string()
+            .chars()
+            .map(|c| c.to_digit(10).unwrap())
+            .collect();
+        let mut new_n: u32 = 0; 
+        for i in 0..n_list.len() {
+            new_n += n_list[i] * n_list[i];
+        }
+        n = new_n;
+        if past_numbers.contains(&n){
+            return false;
+        }
+        past_numbers.push(n)
+    }
 }
 
 fn main() {
@@ -25,12 +30,6 @@ fn main() {
         true,
         false
     ];
-
-    // println!("Hello, world!");
-    // let resu : bool = is_happy(1);
-    // if resu == true{
-    //     println!("True")
-    // }
 
     for i in 0..test_cases.len() {
         println!("==================================");
