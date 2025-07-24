@@ -1,9 +1,20 @@
 from examples import test_cases, expected_results
 
+
 class Solution:
     def maximumUniqueSubarrayNew(self, nums: list[int]) -> int:
-        
-        return 0
+        current_sub = []
+        left_index = 0
+        max_sum = 0
+        current_sum = 0
+        for right_index, value in enumerate(nums):
+            while value in current_sub:
+                current_sum -= current_sub[0]
+                current_sub.pop(0)
+            current_sub.append(value)
+            current_sum += value
+            max_sum = max(current_sum, max_sum)
+        return max_sum
 
     def maximumUniqueSubarray(self, nums: list[int]) -> int:
         self.max = 0
