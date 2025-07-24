@@ -13,6 +13,9 @@ expected_results = [
 
 
 class Solution:
+    def maximumUniqueSubarrayNew(self, nums: list[int]) -> int:
+        pass
+
     def maximumUniqueSubarray(self, nums: list[int]) -> int:
         self.max = 0
         for index, value in enumerate(nums):
@@ -63,7 +66,8 @@ class Solution:
 
 # Testing
 for i in range(0, len(test_cases)):
-    result = Solution.maximumUniqueSubarray(Solution, test_cases[i])
+    result = Solution.maximumUniqueSubarrayNew(Solution, test_cases[i])
+    # result = Solution.maximumUniqueSubarray(Solution, test_cases[i])
     if result == expected_results[i]:
         print(f"==Test case {i+1} was valid")
         print(f"✔️  Got '{result}', expected {expected_results[i]}")
